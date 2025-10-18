@@ -24,6 +24,7 @@ header {
 header h1 {
   text-align: center;
   margin: 0;
+  font-size: 2rem;
 }
 
 nav ul {
@@ -68,17 +69,24 @@ section {
   gap: 2rem;
 }
 
+/* Project Cards */
 #projects article {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   padding: 1rem;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
 }
 
 #projects img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 250px;
   height: auto;
   border-radius: 4px;
+  display: block;
+  margin: 0 auto 1rem;
 }
 
 /* Skills */
@@ -187,5 +195,23 @@ footer {
 
   .hamburger {
     display: block;
+    margin: 1rem auto;
   }
+
+  #projects {
+    align-items: center;
+  }
+}
+
+/* Cross-Browser Compatibility */
+button {
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+input, textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
